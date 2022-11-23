@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Polling Unit Result</title>
+  </head>
+  <body>
+    <h1>Igala Polling Unit Result</h1>
+    <hr />
+    <table border="1">
+      <tr>
+        <th>result_id</th>
+        <th>Iga</th>
+        <th>Party Abbreviation</th>
+        <th>Party Score</th>
+        <th>Entered By User</th>
+        <th>Date Entered</th>
+        <th>User Ip Address</th>
+      </tr>
+      {% for getdata in AnnouncedLgaResults %}
+      <tr>
+        <td>{{ getdata.result_id }}</td>
+        <td>{{ getdata.Iga_name }}</td>
+        <td>{{ getdata.party_abbreviation }}</td>
+        <td>{{ getdata.party_score }}</td>
+        <td>{{ getdata.entered_by_user }}</td>
+        <td>{{ getdata.date_entered }}</td>
+        <td>{{ getdata.user_ip_address }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
