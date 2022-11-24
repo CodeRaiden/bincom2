@@ -7,7 +7,7 @@
     <title>Individual Polling Unit Result</title>
   </head>
   <body>
-    <h1>Igala Polling Unit Result</h1>
+    <h1>LGA Polling Unit Result</h1>
     <hr />
     <table border="1">
       <tr>
@@ -22,7 +22,7 @@
       {% for getdata in AnnouncedLgaResults %}
       <tr>
         <td>{{ getdata.result_id }}</td>
-        <td>{{ getdata.Iga_name }}</td>
+        <td>{{ getdata.lga_name }}</td>
         <td>{{ getdata.party_abbreviation }}</td>
         <td>{{ getdata.party_score }}</td>
         <td>{{ getdata.entered_by_user }}</td>
